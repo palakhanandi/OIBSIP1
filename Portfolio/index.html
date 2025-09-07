@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <header>
+    <nav class="navbar">
+      <div class="logo"><i class="fas fa-code"></i> MyPortfolio</div>
+      <ul class="nav-links">
+        <li><a href="#about"><i class="fas fa-user"></i> About</a></li>
+        <li><a href="#experience"><i class="fas fa-briefcase"></i> Experience</a></li>
+        <li><a href="#skills"><i class="fas fa-laptop-code"></i> Skills</a></li>
+        <li><a href="#projects"><i class="fas fa-folder-open"></i> Projects</a></li>
+        <li><a href="#contact"><i class="fas fa-envelope"></i> Contact</a></li>
+      </ul>
+      <div class="hamburger"><i class="fas fa-bars"></i></div>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="about" class="hero">
+    <div class="hero-container">
+      <div class="hero-text">
+        <h1>Hello, I'm <span class="highlight">Palak</span></h1>
+        <p class="typing"></p>"I’m a passionate and goal-driven learner with hands-on experience <br>
+        in Web Development, C++, and Data Structures & Algorithms (DSA).<br>I’ve also explored an  exciting world of the Artificial Intelligence, Data <br> Analysis and Python programming."</p>
+        <!-- <a href="#contact" class="btn"><i class="fas fa-paper-plane"></i></a> -->
+        <div class="social-links">
+          <a href="#"><i class="fab fa-github"></i></a>
+          <a href="#"><i class="fab fa-linkedin"></i></a>
+          <a href="#"><i class="fab fa-telegram"></i></a>
+        </div>
+      </div>
+      <div class="hero-img">
+        <img src="/photo_6188206670287587225_y.jpg" alt="My Photo" class="profile-pic">
+      </div>
+    </div>
+  </section>
+
+  <!-- Work Experience -->
+  <section id="experience" class="section">
+    <h2><i class="fas fa-briefcase"></i> Work Experience</h2>
+    <div class="card">
+      <h3><i class="fas fa-building"></i> Intern – Web Developer</h3>
+      <p>Worked on frontend designs using HTML, CSS, and React at Oasis InfoByte.</p>
+    </div>
+    <div class="card">
+      <h3><i class="fas fa-laptop"></i>Intern – CodSoft </h3>
+      <p>Built Number Guessing Game ,To-Do-List App, Console Based Tic-Tac-Toe Game.</p>
+    </div>
+  </section>
+
+  <!-- Skills -->
+  <section id="skills" class="section skills">
+    <h2><i class="fas fa-laptop-code"></i> Skills</h2>
+    <div class="skills-grid">
+      <span><i class="fab fa-html5"></i> HTML</span>
+      <span><i class="fab fa-css3-alt"></i> CSS</span>
+      <span><i class="fab fa-js"></i> JavaScript</span>
+      <span><i class="fab fa-react"></i> React</span>
+      <span><i class="fab fa-python"></i> Python</span>
+      <span><i class="fab fa-git-alt"></i> Git</span>
+      <span><i class="fas fa-mobile-alt"></i> Responsive Design</span>
+    </div>
+  </section>
+
+  <!-- Projects -->
+  <section id="projects" class="section">
+    <h2><i class="fas fa-folder-open"></i> Projects</h2>
+    <div class="project-grid">
+      <div class="card project">
+        <h3><i class="fas fa-globe"></i> Portfolio Website</h3>
+        <p>A personal portfolio built with HTML, CSS, and animations.It also contains introduction,experience,
+          projects and many more sessions.</p>
+      </div>
+      <div class="card project">
+        <h3><i class="fa-solid fa-temperature-high"></i> Temperature Coverter</h3>
+       <p>A web app that converts the temperature in celsius,kelvin and Faherheit as desired by user.</p>
+       </div>
+      <div class="card project">
+        <h3><i class="fas fa-bullhorn"></i> Landing Page</h3>
+        <p>A modern responsive landing page for Food delivery app which containes order ,get in touch and features session.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="section contact">
+    <h2><i class="fas fa-envelope"></i> Contact Me</h2>
+    <p><i class="fas fa-envelope"></i> Email:  <a href="mailto:palak39h@gmail.com" target="_blank">
+      palak39h@gmail.com
+    </a></p>
+    <p><i class="fab fa-linkedin"></i> LinkedIn: <a href="https://www.linkedin.com/in/palak-hanandi-432920327" target="_blank">
+      linkedin.com/in/palak-hanandi-432920327
+    </a></p>
+    <p><i class="fab fa-github"></i> Github : <a href="https://github.com/palakhanandi" target="_blank">
+      github.com/palakhanandi
+    </a></p>
+  </section>
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 Palak Hanandi| Made with <i class="fas fa-heart" style="color: red;"></i></p>
+  </footer>
+
+  <script>
+    // Toggle navbar on mobile
+    const hamburger = document.querySelector(".hamburger");
+    const navLinks = document.querySelector(".nav-links");
+    hamburger.addEventListener("click", () => {
+      navLinks.classList.toggle("active");
+    });
+  </script>
+
+</body>
+</html>
